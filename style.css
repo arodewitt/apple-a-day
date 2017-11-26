@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antiAliased;
+  text-rendering: optimizeLegibility;
+}
+body {
+  background-color: #c6fff2;
+  color: #544dc7;
+  margin: 0;
+}
+
+/*main typography ---------------------*/
+h1 {
+  font-family: 'Judson', serif;
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Courier', monospace;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+q,
+.lyric-snip {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*page structure ----------------------*/
+
+.lyric_container {
+  /*height: calc(100vh - 200px);*/
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.lyric-snip {
+  /*max-width: 500px;*/
+  width: 75%;
+  height: 100%;
+  padding: 0;
+  margin: 0 60px 0 0;
+}
+
+.lyric-snip::before {
+  content: open-quote;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+  mix-blend-mode: multiply;
+  font-size: 150px;
+  font-family: 'Francois One', sans-serif;
+}
+
+.lyric-snip::after {
+  content: close-quote;
+}
+
+.lyric_info_container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 60%;
+  justify-content: space-between;
+}
+
+.info {
+  padding: 0;
+  margin: 0 0 60px 0;
+}
+
+.info:last-child {
+  margin: 0 0 16px 0;
+}
