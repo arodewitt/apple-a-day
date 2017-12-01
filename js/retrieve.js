@@ -1,6 +1,6 @@
 var container = document.getElementById('lyric_container');
 // var section = document.querySelector('section');
-var requestURL = 'song-info.json';
+var requestURL = '/data/song-info.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -8,20 +8,20 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  var quote = request.response;
-  populateHeader(quote);
-  showHeroes(quote);
+  var songLyric = request.response;
+  populateText(songLyric);
+  // showHeroes(quote);
 }
 
-    // function populateHeader(jsonObj) {
-    //   var myH1 = document.createElement('h1');
-    //   myH1.textContent = jsonObj['squadName'];
-    //   header.appendChild(myH1);
+function populateText(jsonObj) {
+  var myH1 = document.createElement('h1');
+  myH1.textContent = jsonObj['Quote'];
+  container.appendChild(myH1);
 
-    //   var myPara = document.createElement('p');
-    //   myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-    //   header.appendChild(myPara);
-    // }
+  // var myPara = document.createElement('p');
+  // myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+  // header.appendChild(myPara);
+}
 
     // function showHeroes(jsonObj) {
     //   var heroes = jsonObj['members'];
