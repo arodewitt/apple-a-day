@@ -3,18 +3,32 @@
   -webkit-font-smoothing: antiAliased;
   text-rendering: optimizeLegibility;
 }
+
+html,
 body {
-  background-color: #c6fff2;
-  color: #544dc7;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+/* main typography ---------- */
+/*h1 {
+  font-family: 'Judson', serif;
+  line-height: 1.1;
+  font-weight: 700;
+}*/
+
+h1 {
   margin: 0;
 }
 
-/*main typography ---------------------*/
-h1 {
-  font-family: 'Judson', serif;
-  font-size: 58px;
-  line-height: 1.1;
-  font-weight: 700;
+.header_h1 {
+  font-family: sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 h2 {
@@ -28,15 +42,36 @@ q,
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/*page structure ----------------------*/
+/* page structure ---------- */
+.page-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
 
 .lyric_container {
-  /*height: calc(100vh - 200px);*/
+  padding: 0 0 0 15px;
+}
+
+.lyric_container-quote h1 {
+  font-size: 2.5rem;
+  margin-top: 60px;
+}
+
+.lyric_container-mark {
+  content: open-quote;
+  position: absolute;
+  mix-blend-mode: multiply;
+  margin-top: -90px;
+  font-size: 160px;
+
+}
+/*.lyric_container {
   width: 80%;
   margin: 100px auto;
   display: flex;
   align-items: flex-end;
-}
+}*/
 
 .lyric-snip {
   /*max-width: 500px;*/
@@ -44,16 +79,6 @@ q,
   height: 100%;
   padding: 0;
   margin: 0 60px 0 0;
-}
-
-.lyric-snip::before {
-  content: open-quote;
-  position: absolute;
-  margin-top: -30px;
-  margin-left: -30px;
-  mix-blend-mode: multiply;
-  font-size: 150px;
-  font-family: 'Francois One', sans-serif;
 }
 
 .lyric-snip::after {
@@ -75,4 +100,20 @@ q,
 
 .info:last-child {
   margin: 0 0 16px 0;
+}
+
+/* footer ---------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+.footer_p {
+  line-height: 1;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
 }

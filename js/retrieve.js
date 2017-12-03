@@ -1,4 +1,5 @@
-var container = document.getElementById('lyric_container');
+var quoteDiv = document.getElementById('lyric_container-quote');
+var infoDiv = document.getElementById('lyric_container-info');
 // gets json array
 var requestURL = '/data/song-info.json';
 var request = new XMLHttpRequest();
@@ -31,8 +32,8 @@ function populateText(jsonObj) {
   myH2b.textContent = jsonObj.songs[r].album;
   myH2c.textContent = jsonObj.songs[r].year;
 
-  container.appendChild(myH1);
-  container.appendChild(myH2a);
-  container.appendChild(myH2b);
-  container.appendChild(myH2c);
+  quoteDiv.appendChild(myH1);
+  infoDiv.appendChild(myH2a);
+  infoDiv.appendChild(myH2b);
+  infoDiv.appendChild(myH2c);
 }
