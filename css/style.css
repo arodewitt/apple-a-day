@@ -22,6 +22,13 @@ body {
 }
 
 @font-face{
+  font-family: 'Mermaid';
+  font-style: normal;
+  font-weight: normal;
+	src: url('/fonts/Mermaid1001.ttf');
+}
+
+@font-face{
 	font-family: 'Space Mono';
   font-style: normal;
   font-weight: normal;
@@ -86,7 +93,7 @@ q,
 }
 
 .lyric_container-quote h1 {
-  font-family: 'Coolvetica', Helvetica, sans-serif;
+  font-family: 'Mermaid', Times, serif;
   letter-spacing: 1px;
   font-size: 2.5rem;
   margin: 60px 0;
@@ -160,6 +167,7 @@ footer {
     width: 60%;
   }
   .lyric_container-quote h1 {
+    line-height: 1.2;
     font-size: 4rem;
     margin-bottom: 0;
   }
