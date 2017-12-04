@@ -3,18 +3,27 @@
   -webkit-font-smoothing: antiAliased;
   text-rendering: optimizeLegibility;
 }
+
+html,
 body {
-  background-color: #c6fff2;
-  color: #544dc7;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+/* main typography ---------- */
+
+h1 {
   margin: 0;
 }
 
-/*main typography ---------------------*/
-h1 {
-  font-family: 'Judson', serif;
-  font-size: 58px;
-  line-height: 1.1;
-  font-weight: 700;
+.header_h1 {
+  font-family: sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 h2 {
@@ -28,51 +37,102 @@ q,
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/*page structure ----------------------*/
+/* page structure ---------- */
+.page-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
 
 .lyric_container {
-  /*height: calc(100vh - 200px);*/
-  width: 80%;
-  margin: 100px auto;
-  display: flex;
-  align-items: flex-end;
+  padding: 0 0 0 15px;
+  width: 100%;
 }
 
-.lyric-snip {
-  /*max-width: 500px;*/
-  width: 75%;
-  height: 100%;
-  padding: 0;
-  margin: 0 60px 0 0;
+.lyric_container-quote h1 {
+  font-size: 2.5rem;
+  margin: 60px 0;
 }
 
-.lyric-snip::before {
+.lyric_container-mark {
   content: open-quote;
   position: absolute;
-  margin-top: -30px;
-  margin-left: -30px;
   mix-blend-mode: multiply;
-  font-size: 150px;
-  font-family: 'Francois One', sans-serif;
+  margin-top: -90px;
+  font-size: 160px;
 }
 
-.lyric-snip::after {
-  content: close-quote;
+.lyric_container-info h2 {
+  padding: 25px 0 0 0;
+  border-bottom: 0.5px dotted black;
 }
 
-.lyric_info_container {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 60%;
-  justify-content: space-between;
-}
-
-.info {
-  padding: 0;
-  margin: 0 0 60px 0;
-}
-
-.info:last-child {
+/*.info:last-child {
   margin: 0 0 16px 0;
+}*/
+
+/* footer ---------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+.footer_p {
+  line-height: 1;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* tablets ---------- */
+@media (min-width: 768px) {
+  .page-wrapper {
+    padding: 30px;
+  }
+
+  .lyric_container {
+    padding: 0 0 0 30px;
+  }
+
+  .lyric_container h1{
+    margin: 60px 0 120px 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+  .header {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 30px auto;
+  }
+  .lyric_container {
+    width: 75%;
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+  }
+  .lyric_container-quote {
+    width: 60%;
+  }
+  .lyric_container-quote h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  .lyric_container-info {
+    width: 35%;
+    padding-left: 30px;
+  }
+  .lyric_container-info h2{
+    padding: 30px 0 15px 0;
+  }
+  .lyric_container-mark {
+    margin-top: -25px;
+  }
 }
