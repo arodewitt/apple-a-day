@@ -56,6 +56,13 @@ body {
 	src: url('/fonts/SpaceMono-BoldItalic.woff');
 }
 
+@font-face{
+	font-family: 'Young Serif';
+  font-style: italic;
+  font-weight: regular;
+	src: url('/fonts/YoungSerif-Regular.woff');
+}
+
 /* main typography ---------- */
 
 h1 {
@@ -109,7 +116,7 @@ q,
 }
 
 .lyric_container-quote h1 {
-  font-family: 'Mermaid', Times, serif;
+  font-family: 'Young Serif', Times, serif;
   letter-spacing: 1px;
   font-size: 1.5rem;
   line-height: 1.4;
