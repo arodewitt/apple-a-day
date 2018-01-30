@@ -6,14 +6,27 @@
 
 html,
 body {
-  background-color: #fff;
-  color: #000;
+  /* background-color: #fff; */
+  /* color: #000; */
   margin: 0;
   height: 100%;
   font-size: 14px;
 }
 
-/* fonts ---------- */
+/* color themes ---------------------------------------------------------------*/
+.minted {
+  background-color: #f7fff0;
+  color: #875776;
+  fill: #875776;
+}
+
+.dour-melon {
+  background-color: #e7ff83;
+  color: #f98f69;
+  fill: #f98f69;
+}
+
+/* fonts --------------------------------------------------------------------- */
 @font-face{
   font-family: 'Coolvetica';
   font-style: normal;
@@ -89,12 +102,15 @@ p {
 }
 
 a {
-  color: black;
   font-style: normal;
 }
 
-a:visited{
+a:visited {
   color: black;
+}
+
+.recolor:visited {
+  color: inherit;
 }
 
 q,
