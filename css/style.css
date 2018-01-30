@@ -50,8 +50,6 @@ body {
 
 .the-red-we-painted {} */
 
-fff4e1
-
 /* fonts --------------------------------------------------------------------- */
 @font-face{
   font-family: 'Coolvetica';
@@ -102,7 +100,7 @@ fff4e1
 	src: url('/fonts/YoungSerif-Regular.woff');
 }
 
-/* main typography ---------- */
+/* main typography ----------------------------------------------------------- */
 
 h1 {
   margin: 0;
@@ -144,7 +142,7 @@ q,
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* page structure ---------- */
+/* page structure ------------------------------------------------------------ */
 .page-wrapper {
   display: flex;
   width: 100%;
@@ -162,15 +160,16 @@ q,
   font-size: 2rem;
   line-height: 1.4;
   margin: 40px 0;
-  /*color: #9e9e9e;*/
 }
 
 .lyric_container-mark {
   margin-top: 30px;
+  opacity: 0.5;
 }
 
 .lyric_container-mark-bottom {
   transform: rotate(180deg);
+  opacity: 0.5;
 }
 
 .lyric_container-info h2 {
@@ -187,7 +186,7 @@ q,
   margin-top: 60px;
 }
 
-/* footer ---------- */
+/* footer -------------------------------------------------------------------- */
 footer {
   position: absolute;
   bottom: 0;
@@ -204,7 +203,7 @@ footer {
   text-align: center;
 }
 
-/* tablets ---------- */
+/* tablets ------------------------------------------------------------------- */
 @media (min-width: 768px) {
   .page-wrapper {
     padding: 30px;
