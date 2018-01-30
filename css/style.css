@@ -50,6 +50,40 @@ body {
 
 .the-red-we-painted {} */
 
+/* animation ----------------------------------------------------------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+@keyframes fadeInHalf {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.9s;
+  animation-delay: 0s;
+}
+
+.fade-in-half {
+  opacity: 0;
+  animation: fadeInHalf ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .2s;
+}
+
+.fade-in-last {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: .4s;
+}
+
 /* fonts --------------------------------------------------------------------- */
 @font-face{
   font-family: 'Coolvetica';
@@ -164,12 +198,10 @@ q,
 
 .lyric_container-mark {
   margin-top: 30px;
-  opacity: 0.5;
 }
 
 .lyric_container-mark-bottom {
   transform: rotate(180deg);
-  opacity: 0.5;
 }
 
 .lyric_container-info h2 {
