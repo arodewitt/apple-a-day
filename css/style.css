@@ -259,56 +259,11 @@ footer {
 }
 
 /* tablets ------------------------------------------------------------------- */
-@media (min-width: 768px) {
-  .page-wrapper {
-    padding: 30px;
-  }
+ @media (min-width: 768px) {
 
-  .lyric_container {
-    padding: 0 0 0 30px;
-  }
-
-  .lyric_container h1{
-    margin: 60px 0 120px 0;
-  }
 }
 
+/* desktop ------------------------------------------------------------------- */
 @media (min-width: 1100px) {
-  .page-wrapper {
-    flex-direction: column;
-  }
-  .header {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto 30px auto;
-  }
-  .lyric_container {
-    width: 75%;
-    display: flex;
-    align-items: flex-end;
-    margin: auto;
-  }
-  .lyric_container-quote {
-    width: 60%;
-  }
-  .lyric_container-quote h1 {
-    line-height: 1.2;
-    font-size: 4rem;
-    margin-bottom: 0;
-  }
-  .lyric_container-mark {
-    font-size: 300px;
-    margin-top: -70px;
-  }
-  .lyric_container-info {
-    width: 35%;
-    padding-left: 30px;
-  }
-  .lyric_container-info h2{
-    padding: 30px 0 15px 0;
-  }
-  .lyric_container-mark {
-    margin-top: -25px;
-  }
+
 }
