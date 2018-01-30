@@ -5,7 +5,7 @@ window.onload = function() {
   var hasTheme = document.getElementsByClassName('recolor');
 
 // holds themes and chooses one at random
-  var colorTheme = ['minted', 'dour-melon'];
+  var colorTheme = ['minted', 'dour-melon', 'imbue-my-blue', 'just-rust', 'brass'];
   var themeL = colorTheme.length;
   var randomTheme = Math.floor(Math.random() * (themeL + 0));
 
@@ -16,5 +16,5 @@ window.onload = function() {
   }
 
 // logs selection
-  console.log(randomTheme);
+  console.log(colorTheme[randomTheme]);
 }

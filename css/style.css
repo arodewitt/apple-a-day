@@ -26,6 +26,32 @@ body {
   fill: #f98f69;
 }
 
+.brass {
+  background-color: #e1ffe2;
+  color: #db9942;
+  fill: #db9942;
+}
+
+.imbue-my-blue {
+  background-color: #81f2f2;
+  color: #f7fff0;
+  fill: #f7fff0;
+}
+
+.just-rust {
+  background-color: #fff4e1;
+  color: #f99378;
+  fill: #f99378;
+}
+
+/* .slow-like-honey {}
+
+.neon-zebra {}
+
+.the-red-we-painted {} */
+
+fff4e1
+
 /* fonts --------------------------------------------------------------------- */
 @font-face{
   font-family: 'Coolvetica';
