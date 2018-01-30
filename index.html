@@ -10,17 +10,24 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="header">
+      <!-- <div class="header">
         <h1 class="header_h1">an</h1>
         <h1 class="header_h1">apple</h1>
         <h1 class="header_h1">a</h1>
         <h1 class="header_h1">day</h1>
-      </div>
+      </div> -->
 
       <div class="lyric_container">
-        <img class="lyric_container-mark" height="36px" src="img/quote-stencil.svg" alt="Opening quotation marks.">
+        <svg class="lyric_container-mark" height="36px" src="img/quote-stencil.svg" alt="Opening quotation marks." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.22 33.19">
+            <path d="M9.76,15.56H14.3a.69.69,0,0,1,.69.69V32.5a.69.69,0,0,1-.69.69H.69A.69.69,0,0,1,0,32.5V17.82a.69.69,0,0,1,.08-.32L9,.37A.69.69,0,0,1,9.78,0l3.78,1.1A.69.69,0,0,1,14,2L9.12,14.62A.69.69,0,0,0,9.76,15.56Zm20.24,0h4.54a.69.69,0,0,1,.69.69V32.5a.69.69,0,0,1-.69.69H20.92a.69.69,0,0,1-.69-.69V17.82a.69.69,0,0,1,.08-.32L29.22.37A.69.69,0,0,1,30,0l3.78,1.1a.69.69,0,0,1,.45.91l-4.9,12.58A.69.69,0,0,0,30,15.56Z"/>
+        </svg>
+
         <div id="lyric_container-quote" class="lyric_container-quote">
         </div>
+
+        <svg class="lyric_container-mark-bottom" height="36px" src="img/quote-stencil.svg" alt="Closing quotation marks." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.22 33.19">
+            <path d="M9.76,15.56H14.3a.69.69,0,0,1,.69.69V32.5a.69.69,0,0,1-.69.69H.69A.69.69,0,0,1,0,32.5V17.82a.69.69,0,0,1,.08-.32L9,.37A.69.69,0,0,1,9.78,0l3.78,1.1A.69.69,0,0,1,14,2L9.12,14.62A.69.69,0,0,0,9.76,15.56Zm20.24,0h4.54a.69.69,0,0,1,.69.69V32.5a.69.69,0,0,1-.69.69H20.92a.69.69,0,0,1-.69-.69V17.82a.69.69,0,0,1,.08-.32L29.22.37A.69.69,0,0,1,30,0l3.78,1.1a.69.69,0,0,1,.45.91l-4.9,12.58A.69.69,0,0,0,30,15.56Z"/>
+        </svg>
 
         <div id="lyric_container-info" class="lyric_container-info">
         </div>
@@ -28,10 +35,11 @@
     </div>
 
     <footer>
-      <p class="footer_p">a microsite designed and developed by <a href="http://aliciadewitt.com" target="_blank">alicia dewitt</a>.</p>
+      <p class="footer_p">a microsite designed and developed by <a class="recolor" href="http://aliciadewitt.com" target="_blank">alicia dewitt</a>.</p>
     </footer>
 
     <!-- <script src="js/lyric-resize.js"></script> -->
     <script src="js/retrieve.js"></script>
+    <script src="js/color-themes.js"></script>
   </body>
 </html>

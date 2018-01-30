@@ -6,14 +6,53 @@
 
 html,
 body {
-  background-color: #fff;
-  color: #000;
+  /* background-color: #fff; */
+  /* color: #000; */
   margin: 0;
   height: 100%;
   font-size: 14px;
 }
 
-/* fonts ---------- */
+/* color themes ---------------------------------------------------------------*/
+.minted {
+  background-color: #f7fff0;
+  color: #875776;
+  fill: #875776;
+}
+
+.dour-melon {
+  background-color: #e7ff83;
+  color: #f98f69;
+  fill: #f98f69;
+}
+
+.brass {
+  background-color: #e1ffe2;
+  color: #db9942;
+  fill: #db9942;
+}
+
+.imbue-my-blue {
+  background-color: #81f2f2;
+  color: #f7fff0;
+  fill: #f7fff0;
+}
+
+.just-rust {
+  background-color: #fff4e1;
+  color: #f99378;
+  fill: #f99378;
+}
+
+/* .slow-like-honey {}
+
+.neon-zebra {}
+
+.the-red-we-painted {} */
+
+fff4e1
+
+/* fonts --------------------------------------------------------------------- */
 @font-face{
   font-family: 'Coolvetica';
   font-style: normal;
@@ -89,12 +128,15 @@ p {
 }
 
 a {
-  color: black;
   font-style: normal;
 }
 
-a:visited{
+a:visited {
   color: black;
+}
+
+.recolor:visited {
+  color: inherit;
 }
 
 q,
@@ -106,7 +148,6 @@ q,
 .page-wrapper {
   display: flex;
   width: 100%;
-  padding: 20px;
 }
 
 .lyric_container {
@@ -118,21 +159,22 @@ q,
 .lyric_container-quote h1 {
   font-family: 'Young Serif', Times, serif;
   letter-spacing: 1px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.4;
   margin: 40px 0;
   /*color: #9e9e9e;*/
 }
 
 .lyric_container-mark {
-  margin-top: 42px;
-  /*color: #dedede;*/
+  margin-top: 30px;
+}
+
+.lyric_container-mark-bottom {
+  transform: rotate(180deg);
 }
 
 .lyric_container-info h2 {
   padding: 25px 0 0 0;
-  /*color: #9e9e9e;*/
-  /*border-bottom: 0.5px dotted;*/
 }
 
 .lyric_container-info h2:first-child {
@@ -140,9 +182,10 @@ q,
   padding-top: 0;
   font-style: italic;
 }
-/*.info:last-child {
-  margin: 0 0 16px 0;
-}*/
+
+.lyric_container-info {
+  margin-top: 60px;
+}
 
 /* footer ---------- */
 footer {

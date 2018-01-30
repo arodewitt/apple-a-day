@@ -22,7 +22,8 @@ function populateText(jsonObj) {
 
 // gets max-value for random array entry
   var l = jsonObj.songs.length;
-// creates variable based on randomly selected array entry
+
+// creates variable based on randomly selected array entry and logs selection
   var r = Math.floor(Math.random() * (l + 0));
   console.log(r);
 
