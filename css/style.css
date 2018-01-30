@@ -40,6 +40,7 @@ body {
 
 .just-rust {
   background-color: #fff4e1;
+  border-color: #f99378;
   color: #f99378;
   fill: #f99378;
 }
@@ -183,8 +184,7 @@ q,
 }
 
 .lyric_container {
-  padding: 0 0 0 30px;
-  margin-right: 20px;
+  margin: 0 30px;
   width: 100%;
 }
 
@@ -200,8 +200,31 @@ q,
   margin-top: 30px;
 }
 
+.page-divider {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-divider-p,
+.page-divider-hr {
+  padding: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.page-divider_top-border {
+  flex-grow: 1;
+  border-top: 1px solid;
+  margin: 8px 15px 0 15px;
+}
+
 .lyric_container-mark-bottom {
   transform: rotate(180deg);
+}
+
+.lyric_container-hr {
+  background-color: inherit
 }
 
 .lyric_container-info h2 {
